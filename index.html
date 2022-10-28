@@ -8,25 +8,25 @@
 <body>
     <div class="container">
         <div>
-            <h3>HOME</h3>
-            <div class="score-div">
-                <p class="score-p">0</p>
+            <h3 class="score-title">HOME</h3>
+            <div class="score-container">
+                <p id="score-home" class="score">0</p>
             </div>
             <div class="add-points-btns">
-                <button class="add-one-btn"></button>
-                <button class="add-two-btn"></button>
-                <button class="add-three-btn"></button>
+                <button id="sum-one-home" class="add-score-btn">+1</button>
+                <button class="add-score-btn" onclick="sumTwoToHomeScore()">+2</button>
+                <button class="add-score-btn" onclick="sumThreeToHomeScore()">+3</button>
             </div>
         </div>
         <div>
-            <h3>GUEST</h3>
-            <div class="score-div">
-                <p class="score-p">0</p>
+            <h3 class="score-title">GUEST</h3>
+            <div class="score-container">
+                <p id="score-guest" class="score">0</p>
             </div>
             <div class="add-points-btns">
-                <button class="add-one-btn"></button>
-                <button class="add-two-btn"></button>
-                <button class="add-three-btn"></button>
+                <button class="add-score-btn" onclick="sumOneToGuestScore()">+1</button>
+                <button class="add-score-btn" onclick="sumTwoToGuestScore()">+2</button>
+                <button class="add-score-btn" onclick="sumThreeToGuestScore()">+3</button>
             </div>
         </div>
     </div>
